@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acesse sua conta NaturaVet. Login para clientes, consultores, editores e administradores. Gerencie informações do seu pet e acompanhe consultas.">
+    <meta name="keywords" content="login NaturaVet, acesso conta, área do cliente, painel veterinário, gestão pets">
+    <title>Login - Acesse sua Conta | NaturaVet</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/forms.css">
+    <link rel="stylesheet" href="assets/css/pages/login.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="logo">
+                    <span class="brand-name">NaturaVet</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicos.html" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="depoimentos.html" class="nav-link">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="login-main">
+        <div class="login-container">
+            <!-- Login Card Principal -->
+            <div class="login-card">
+                <!-- Login Form -->
+                <div class="login-form-container" id="login-form-container">
+                    <div class="login-header">
+                        <div class="login-brand">
+                            <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="login-logo">
+                            <h1>Acesse sua Conta</h1>
+                            <p>Entre com seu e-mail e senha para continuar</p>
+                        </div>
+                    </div>
+
+                    <form class="login-form" id="login-form">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <div class="input-group">
+                                <i class="fas fa-envelope input-group-icon"></i>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <div class="input-group">
+                                <i class="fas fa-lock input-group-icon"></i>
+                                <input type="password" id="password" name="password" placeholder="Sua senha" required>
+                                <button type="button" class="password-toggle" id="password-toggle">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <span class="form-error" id="password-error"></span>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="remember" id="remember">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Lembrar de mim</span>
+                            </label>
+                            <a href="#" class="forgot-password" id="forgot-password">Esqueci minha senha</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full" id="login-btn">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Entrar
+                        </button>
+
+                        <div class="social-login">
+                            <div class="social-divider">
+                                <span>ou entre com</span>
+                            </div>
+                            <div class="social-buttons">
+                                <button type="button" class="btn btn-social btn-google">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </button>
+                                <button type="button" class="btn btn-social btn-facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Facebook
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="login-footer">
+                        <p>Não tem uma conta? <a href="#" id="show-register-form">Cadastre-se aqui</a></p>
+                    </div>
+                </div>
+
+                <!-- Register Form -->
+                <div class="register-form-container" id="register-form-container" style="display: none;">
+                    <div class="login-header">
+                        <button class="back-button" id="back-to-login">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <div class="login-brand">
+                            <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="login-logo">
+                            <h1>Criar Conta</h1>
+                            <p>Cadastre-se para começar a cuidar melhor do seu pet</p>
+                        </div>
+                    </div>
+
+                    <form class="register-form" id="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reg-nome">Nome Completo</label>
+                                <input type="text" id="reg-nome" name="nome" placeholder="Seu nome completo" required>
+                                <span class="form-error" id="reg-nome-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-email">E-mail</label>
+                                <input type="email" id="reg-email" name="email" placeholder="seu@email.com" required>
+                                <span class="form-error" id="reg-email-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reg-telefone">Telefone</label>
+                                <input type="tel" id="reg-telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                                <span class="form-error" id="reg-telefone-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-tipo">Tipo de Conta</label>
+                                <select id="reg-tipo" name="tipo" required>
+                                    <option value="">Selecione</option>
+                                    <option value="client">Cliente (Tutor de Pet)</option>
+                                    <option value="consultant">Consultor Veterinário</option>
+                                </select>
+                                <span class="form-error" id="reg-tipo-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reg-password">Senha</label>
+                                <div class="input-group">
+                                    <input type="password" id="reg-password" name="password" placeholder="Mínimo 8 caracteres" required>
+                                    <button type="button" class="password-toggle" id="reg-password-toggle">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <span class="form-error" id="reg-password-error"></span>
+                                <div class="password-strength" id="password-strength">
+                                    <div class="strength-bar">
+                                        <div class="strength-fill"></div>
+                                    </div>
+                                    <span class="strength-text">Digite uma senha</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-confirm-password">Confirmar Senha</label>
+                                <input type="password" id="reg-confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+                                <span class="form-error" id="reg-confirm-password-error"></span>
+                            </div>
+                        </div>
+
+                        <!-- Campos específicos para Cliente -->
+                        <div class="client-fields" id="client-fields" style="display: none;">
+                            <h3>Informações do Pet Principal</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pet-nome">Nome do Pet</label>
+                                    <input type="text" id="pet-nome" name="pet-nome" placeholder="Nome do seu pet">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pet-especie">Espécie</label>
+                                    <select id="pet-especie" name="pet-especie">
+                                        <option value="">Selecione</option>
+                                        <option value="cao">Cão</option>
+                                        <option value="gato">Gato</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pet-raca">Raça</label>
+                                    <input type="text" id="pet-raca" name="pet-raca" placeholder="Ex: Golden Retriever">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pet-idade">Idade</label>
+                                    <input type="text" id="pet-idade" name="pet-idade" placeholder="Ex: 3 anos">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Campos específicos para Consultor -->
+                        <div class="consultant-fields" id="consultant-fields" style="display: none;">
+                            <h3>Informações Profissionais</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="crmv">CRMV</label>
+                                    <input type="text" id="crmv" name="crmv" placeholder="Número do CRMV">
+                                </div>
+                                <div class="form-group">
+                                    <label for="especialidade">Especialidade</label>
+                                    <input type="text" id="especialidade" name="especialidade" placeholder="Nutrição Animal">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="experiencia">Anos de Experiência</label>
+                                <select id="experiencia" name="experiencia">
+                                    <option value="">Selecione</option>
+                                    <option value="1-2">1-2 anos</option>
+                                    <option value="3-5">3-5 anos</option>
+                                    <option value="6-10">6-10 anos</option>
+                                    <option value="10+">Mais de 10 anos</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="aceita-termos" required>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">
+                                    Aceito os <a href="#" >termos de uso</a> e 
+                                    <a href="#" >política de privacidade</a>
+                                </span>
+                            </label>
+                            <span class="form-error" id="aceita-termos-error"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="aceita-newsletter">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">
+                                    Desejo receber dicas e novidades por e-mail
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full" id="register-btn">
+                            <i class="fas fa-user-plus"></i>
+                            Criar Conta
+                        </button>
+                    </form>
+
+                    <div class="login-footer">
+                        <p>Já tem uma conta? <a href="#" id="show-login-form">Faça login aqui</a></p>
+                    </div>
+                </div>
+
+                <!-- Forgot Password Form -->
+                <div class="forgot-password-container" id="forgot-password-container" style="display: none;">
+                    <div class="login-header">
+                        <button class="back-button" id="back-to-login-forgot">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <div class="login-brand">
+                            <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="login-logo">
+                            <h1>Recuperar Senha</h1>
+                            <p>Digite seu e-mail para receber instruções de recuperação</p>
+                        </div>
+                    </div>
+
+                    <form class="forgot-form" id="forgot-form">
+                        <div class="form-group">
+                            <label for="forgot-email">E-mail</label>
+                            <div class="input-group">
+                                <i class="fas fa-envelope input-group-icon"></i>
+                                <input type="email" id="forgot-email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            <span class="form-error" id="forgot-email-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full" id="forgot-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Instruções
+                        </button>
+                    </form>
+
+                    <div class="login-footer">
+                        <p>Lembrou da senha? <a href="#" id="back-to-login-link">Fazer login</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Test Access Panel -->
+            <div class="test-access-panel">
+                <div class="test-panel-header">
+                    <h2>Acesso de Teste</h2>
+                    <p>Use os botões abaixo para testar diferentes perfis de usuário</p>
+                </div>
+
+                <div class="test-profiles">
+                    <div class="test-profile-card" data-profile="client">
+                        <div class="test-profile-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Cliente</h3>
+                        <p>Área do tutor de pets</p>
+                        <ul class="test-profile-features">
+                            <li>Histórico de consultas</li>
+                            <li>Planos alimentares</li>
+                            <li>Agendamentos</li>
+                            <li>Relatórios do pet</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full test-login-btn">
+                            Entrar como Cliente
+                        </button>
+                        <div class="test-credentials">
+                            <small>
+                                <strong>E-mail:</strong> cliente@naturavet.com<br>
+                                <strong>Senha:</strong> 123456
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="test-profile-card" data-profile="consultant">
+                        <div class="test-profile-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Consultor</h3>
+                        <p>Área profissional veterinária</p>
+                        <ul class="test-profile-features">
+                            <li>Agenda de consultas</li>
+                            <li>Dados dos pacientes</li>
+                            <li>Relatórios clínicos</li>
+                            <li>Comunicação</li>
+                        </ul>
+                        <button class="btn btn-secondary btn-full test-login-btn">
+                            Entrar como Consultor
+                        </button>
+                        <div class="test-credentials">
+                            <small>
+                                <strong>E-mail:</strong> consultor@naturavet.com<br>
+                                <strong>Senha:</strong> 123456
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="test-profile-card" data-profile="editor">
+                        <div class="test-profile-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3>Editor</h3>
+                        <p>Gestão de conteúdo</p>
+                        <ul class="test-profile-features">
+                            <li>Gerenciar blog</li>
+                            <li>Criar artigos</li>
+                            <li>Moderar comentários</li>
+                            <li>Analytics</li>
+                        </ul>
+                        <button class="btn btn-secondary btn-full test-login-btn">
+                            Entrar como Editor
+                        </button>
+                        <div class="test-credentials">
+                            <small>
+                                <strong>E-mail:</strong> editor@naturavet.com<br>
+                                <strong>Senha:</strong> 123456
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="test-profile-card" data-profile="admin">
+                        <div class="test-profile-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Administrador</h3>
+                        <p>Painel completo</p>
+                        <ul class="test-profile-features">
+                            <li>Gestão de usuários</li>
+                            <li>Configurações</li>
+                            <li>Relatórios gerenciais</li>
+                            <li>Controle total</li>
+                        </ul>
+                        <button class="btn btn-accent btn-full test-login-btn">
+                            Entrar como Admin
+                        </button>
+                        <div class="test-credentials">
+                            <small>
+                                <strong>E-mail:</strong> admin@naturavet.com<br>
+                                <strong>Senha:</strong> 123456
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-panel-footer">
+                    <div class="test-info">
+                        <h4>Informações de Teste</h4>
+                        <ul>
+                            <li>Todos os perfis usam a senha <strong>123456</strong></li>
+                            <li>Os dados são simulados para demonstração</li>
+                            <li>Cada perfil tem funcionalidades específicas</li>
+                            <li>Use para testar diferentes fluxos do sistema</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Simplificado -->
+    <footer class="footer footer-minimal">
+        <div class="container">
+            <div class="footer-minimal-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="footer-logo">
+                    <span class="footer-brand-name">NaturaVet</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Início</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NaturaVet. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components/navigation.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/pages/login.js"></script>
+</body>
+</html>
