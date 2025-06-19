@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leia os depoimentos reais de clientes satisfeitos da NaturaVet. Histórias de transformação e sucesso na nutrição de pets com a Dra. Ana Paula Silva.">
+    <meta name="keywords" content="depoimentos NaturaVet, avaliações nutrição animal, testemunhos clientes pets, casos de sucesso veterinária">
+    <title>Depoimentos - Histórias de Sucesso | NaturaVet</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/pages/depoimentos.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo/logo-principal.jpg" alt="NaturaVet Logo" class="logo">
+                    <span class="brand-name">NaturaVet</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicos.html" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="depoimentos.html" class="nav-link active">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item nav-item-login">
+                            <div class="auth-dropdown">
+                                <button class="auth-trigger" id="auth-trigger">
+                                    <i class="fas fa-user"></i>
+                                    <i class="fas fa-chevron-down auth-arrow"></i>
+                                </button>
+                                
+                                <div class="auth-menu" id="auth-menu">
+                                    <div class="auth-menu-header">
+                                        <h4>Acesse sua conta</h4>
+                                        <p>Escolha seu tipo de acesso</p>
+                                    </div>
+                                    
+                                    <div class="auth-options">
+                                        <a href="login.html?type=client" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Cliente</span>
+                                                <span class="auth-option-desc">Acompanhe seu pet</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=consultant" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-user-md"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Consultor</span>
+                                                <span class="auth-option-desc">Área profissional</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=editor" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-edit"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Editor</span>
+                                                <span class="auth-option-desc">Gerenciar conteúdo</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=admin" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-cog"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Administrador</span>
+                                                <span class="auth-option-desc">Painel completo</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="auth-menu-footer">
+                                        <p>Não tem conta? <a href="login.html?action=register">Cadastre-se</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="testimonials-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Histórias de <span class="highlight">Sucesso</span>
+                    </h1>
+                    <p class="hero-description">
+                        Conheça as transformações reais que nossos serviços proporcionaram 
+                        na vida de pets e seus tutores. Cada depoimento é uma prova do nosso 
+                        compromisso com a saúde e bem-estar animal.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Pets Atendidos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfação</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Avaliação Média</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-controls">
+                    <h2>Filtrar Depoimentos</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-th"></i>
+                            Todos
+                        </button>
+                        <button class="filter-btn" data-filter="weight-loss">
+                            <i class="fas fa-weight"></i>
+                            Perda de Peso
+                        </button>
+                        <button class="filter-btn" data-filter="allergies">
+                            <i class="fas fa-allergies"></i>
+                            Alergias
+                        </button>
+                        <button class="filter-btn" data-filter="chronic">
+                            <i class="fas fa-heartbeat"></i>
+                            Doenças Crônicas
+                        </button>
+                        <button class="filter-btn" data-filter="nutrition">
+                            <i class="fas fa-leaf"></i>
+                            Nutrição Geral
+                        </button>
+                        <button class="filter-btn" data-filter="elderly">
+                            <i class="fas fa-clock"></i>
+                            Pets Idosos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Testimonials -->
+        <section class="featured-testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Depoimentos em Destaque</h2>
+                    <p class="section-subtitle">
+                        Casos especiais que demonstram o impacto transformador do nosso trabalho
+                    </p>
+                </div>
+
+                <div class="featured-grid">
+                    <!-- Depoimento em Destaque 1 -->
+                    <div class="featured-testimonial" data-category="weight-loss">
+                        <div class="testimonial-content">
+                            <div class="testimonial-header">
+                                <div class="client-info">
+                                    <img src="assets/images/testimonials/cliente-maria.jpg" alt="Maria Silva" class="client-photo">
+                                    <div class="client-details">
+                                        <h3 class="client-name">Maria Silva</h3>
+                                        <span class="pet-info">Tutora do Max (Golden Retriever, 6 anos)</span>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-badge">Perda de 8kg</div>
+                            </div>
+                            
+                            <blockquote class="testimonial-text">
+                                "O Max estava com 38kg e muito sedentário. Após 4 meses seguindo o plano da Dra. Ana Paula, 
+                                ele perdeu 8kg de forma saudável e voltou a ser o cão brincalhão de sempre. 
+                                A mudança foi incrível - mais energia, pelo brilhante e muito mais disposição para brincar!"
+                            </blockquote>
+                            
+                            <div class="testimonial-results">
+                                <div class="result-item">
+                                    <span class="result-label">Peso Inicial:</span>
+                                    <span class="result-value">38kg</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Peso Atual:</span>
+                                    <span class="result-value">30kg</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Tempo:</span>
+                                    <span class="result-value">4 meses</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pet-photos">
+                                <div class="photo-comparison">
+                                    <div class="photo-before">
+                                        <img src="assets/images/testimonials/max-antes.jpg" alt="Max antes do tratamento">
+                                        <span class="photo-label">Antes</span>
+                                    </div>
+                                    <div class="photo-after">
+                                        <img src="assets/images/testimonials/max-depois.jpg" alt="Max depois do tratamento">
+                                        <span class="photo-label">Depois</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento em Destaque 2 -->
+                    <div class="featured-testimonial" data-category="allergies">
+                        <div class="testimonial-content">
+                            <div class="testimonial-header">
+                                <div class="client-info">
+                                    <img src="assets/images/testimonials/cliente-joao.jpg" alt="João Santos" class="client-photo">
+                                    <div class="client-details">
+                                        <h3 class="client-name">João Santos</h3>
+                                        <span class="pet-info">Tutor da Luna (Labrador, 3 anos)</span>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-badge">Alergia Resolvida</div>
+                            </div>
+                            
+                            <blockquote class="testimonial-text">
+                                "A Luna sofria com alergias alimentares há mais de um ano. Coceira constante, 
+                                problemas de pele e digestivos. Com a dieta de eliminação e o acompanhamento da Dra. Ana Paula, 
+                                identificamos os alérgenos e hoje ela está completamente curada!"
+                            </blockquote>
+                            
+                            <div class="testimonial-timeline">
+                                <div class="timeline-item">
+                                    <span class="timeline-date">Semana 1-2</span>
+                                    <span class="timeline-desc">Dieta de eliminação iniciada</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-date">Semana 3-4</span>
+                                    <span class="timeline-desc">Primeiras melhorias visíveis</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-date">Semana 6-8</span>
+                                    <span class="timeline-desc">Alérgenos identificados</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-date">3 meses</span>
+                                    <span class="timeline-desc">Recuperação completa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regular Testimonials Grid -->
+        <section class="testimonials-grid-section">
+            <div class="container">
+                <div class="testimonials-grid">
+                    <!-- Depoimento 1 -->
+                    <div class="testimonial-card" data-category="chronic">
+                        <div class="testimonial-header">
+                            <img src="assets/images/testimonials/cliente-ana.jpg" alt="Ana Costa" class="client-avatar">
+                            <div class="client-info">
+                                <h4 class="client-name">Ana Costa</h4>
+                                <span class="pet-name">Tutora do Thor (Pastor Alemão)</span>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Thor foi diagnosticado com diabetes e eu estava desesperada. A Dra. Ana Paula 
+                            desenvolveu um plano nutricional específico que ajudou a controlar a glicemia. 
+                            Hoje ele vive normalmente!"
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-date">Dezembro 2024</span>
+                            <span class="testimonial-category">Diabetes</span>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="testimonial-card" data-category="nutrition">
+                        <div class="testimonial-header">
+                            <img src="assets/images/testimonials/cliente-carlos.jpg" alt="Carlos Oliveira" class="client-avatar">
+                            <div class="client-info">
+                                <h4 class="client-name">Carlos Oliveira</h4>
+                                <span class="pet-name">Tutor da Mel (SRD, 2 anos)</span>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Queria dar uma alimentação mais natural para a Mel, mas não sabia como fazer de forma segura. 
+                            O plano de alimentação natural da Dra. Ana Paula foi perfeito - receitas balanceadas e fáceis de preparar!"
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-date">Janeiro 2025</span>
+                            <span class="testimonial-category">Alimentação Natural</span>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="testimonial-card" data-category="elderly">
+                        <div class="testimonial-header">
+                            <img src="assets/images/testimonials/cliente-lucia.jpg" alt="Lúcia Ferreira" class="client-avatar">
+                            <div class="client-info">
+                                <h4 class="client-name">Lúcia Ferreira</h4>
+                                <span class="pet-name">Tutora do Buddy (Beagle, 12 anos)</span>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "O Buddy estava ficando idoso e perdendo o apetite. Com a nutrição geriátrica especializada, 
+                            ele voltou a comer bem e ganhou mais vitalidade. Estou muito grata pelo cuidado dedicado!"
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-date">Novembro 2024</span>
+                            <span class="testimonial-category">Nutrição Geriátrica</span>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 4 -->
+                    <div class="testimonial-card" data-category="weight-loss">
+                        <div class="testimonial-header">
+                            <img src="assets/images/testimonials/cliente-patricia.jpg" alt="Patrícia Lima" class="client-avatar">
+                            <div class="client-info">
+                                <h4 class="client-name">Patrícia Lima</h4>
+                                <span class="pet-name">Tutora da Lola (Poodle, 5 anos)</span>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "A Lola estava acima do peso e isso estava afetando suas articulações. 
+                            Em 3 meses com o programa de emagrecimento, ela perdeu 3kg e voltou a correr e brincar!"
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-date">Outubro 2024</span>
+                            <span class="testimonial-category">Controle de Peso</span>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 5 -->
+                    <div class="testimonial-card" data-category="nutrition">
+                        <div class="testimonial-header">
+                            <img src="assets/images/testimonials/cliente-ricardo.jpg" alt="Ricardo Mendes" class="client-avatar">
+                            <div class="client-info">
+                                <h4 class="client-name">Ricardo Mendes</h4>
+                                <span class="pet-name">Tutor do Zeus (Rottweiler, 4 anos)</span>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Como o Zeus é um cão de grande porte, eu me preocupava muito com a nutrição dele. 
+                            A Dra. Ana Paula criou um plano perfeito para o desenvolvimento saudável. Recomendo muito!"
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-date">Setembro 2024</span>
+                            <span class="testimonial-category">Nutrição Específica</span>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 6 -->
+                    <div class="testimonial-card" data-category="allergies">
+                        <div class="testimonial-header">
+                            <img src="assets/images/testimonials/cliente-fernanda.jpg" alt="Fernanda Rocha" class="client-avatar">
+                            <div class="client-info">
+                                <h4 class="client-name">Fernanda Rocha</h4>
+                                <span class="pet-name">Tutora da Nina (Shih Tzu, 3 anos)</span>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "A Nina tinha alergia a vários ingredientes e estava sempre com problemas de pele. 
+                            Com a dieta hipoalergênica personalizada, ela finalmente encontrou alívio. Muito obrigada!"
+                        </blockquote>
+                        <div class="testimonial-footer">
+                            <span class="testimonial-date">Agosto 2024</span>
+                            <span class="testimonial-category">Alergia Alimentar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="btn btn-secondary load-more-btn" id="load-more">
+                        <i class="fas fa-plus"></i>
+                        Carregar Mais Depoimentos
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Testimonials -->
+        <section class="video-testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Depoimentos em Vídeo</h2>
+                    <p class="section-subtitle">
+                        Ouça diretamente dos nossos clientes sobre suas experiências
+                    </p>
+                </div>
+
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/testimonials/video-thumb-1.jpg" alt="Depoimento Maria e Max">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span class="video-duration">2:15</span>
+                        </div>
+                        <div class="video-info">
+                            <h4>Maria Silva - Transformação do Max</h4>
+                            <p>Como o Max perdeu 8kg de forma saudável</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/testimonials/video-thumb-2.jpg" alt="Depoimento João e Luna">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span class="video-duration">1:45</span>
+                        </div>
+                        <div class="video-info">
+                            <h4>João Santos - Alergias da Luna</h4>
+                            <p>Superando alergias alimentares com sucesso</p>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="assets/images/testimonials/video-thumb-3.jpg" alt="Depoimento Ana e Thor">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span class="video-duration">3:20</span>
+                        </div>
+                        <div class="video-info">
+                            <h4>Ana Costa - Diabetes do Thor</h4>
+                            <p>Controlando diabetes através da nutrição</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossos Resultados</h2>
+                    <p class="section-subtitle">
+                        Números que comprovam a eficácia do nosso trabalho
+                    </p>
+                </div>
+
+                <div class="statistics-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-label">Pets Atendidos</span>
+                            <span class="stat-description">Mais de 500 animais já foram beneficiados</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="98">0</span>
+                            <span class="stat-unit">%</span>
+                            <span class="stat-label">Taxa de Satisfação</span>
+                            <span class="stat-description">Clientes satisfeitos com os resultados</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-weight"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="85">0</span>
+                            <span class="stat-unit">%</span>
+                            <span class="stat-label">Sucesso em Emagrecimento</span>
+                            <span class="stat-description">Pets que alcançaram o peso ideal</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number" data-target="30">0</span>
+                            <span class="stat-label">Dias Médios</span>
+                            <span class="stat-description">Para ver os primeiros resultados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Testimonial Section -->
+        <section class="submit-testimonial">
+            <div class="container">
+                <div class="submit-content">
+                    <div class="submit-text">
+                        <h2>Compartilhe sua História</h2>
+                        <p>
+                            Seu pet também teve uma transformação incrível? Queremos conhecer sua história! 
+                            Compartilhe sua experiência e inspire outros tutores.
+                        </p>
+                        <ul class="submit-benefits">
+                            <li><i class="fas fa-check"></i> Inspire outros tutores</li>
+                            <li><i class="fas fa-check"></i> Ajude pets em situações similares</li>
+                            <li><i class="fas fa-check"></i> Receba um desconto especial</li>
+                        </ul>
+                    </div>
+                    <div class="submit-form">
+                        <form class="testimonial-form" id="testimonial-form">
+                            <div class="form-group">
+                                <label for="client-name">Seu Nome</label>
+                                <input type="text" id="client-name" name="client-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pet-name">Nome do Pet</label>
+                                <input type="text" id="pet-name" name="pet-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pet-breed">Raça e Idade</label>
+                                <input type="text" id="pet-breed" name="pet-breed" placeholder="Ex: Golden Retriever, 5 anos">
+                            </div>
+                            <div class="form-group">
+                                <label for="testimonial-text">Seu Depoimento</label>
+                                <textarea id="testimonial-text" name="testimonial-text" rows="4" 
+                                         placeholder="Conte como foi sua experiência e os resultados obtidos..." required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="rating">Avaliação</label>
+                                <div class="rating-input">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1"><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Depoimento
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">
+                        Pronto para Escrever sua História de Sucesso?
+                    </h2>
+                    <p class="cta-description">
+                        Junte-se aos centenas de tutores satisfeitos que transformaram a vida de seus pets. 
+                        Agende sua consulta e comece sua jornada de sucesso hoje mesmo.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contato.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-check"></i>
+                            Agendar Consulta
+                        </a>
+                        <a href="https://wa.me/5511999999999"  class="btn btn-whatsapp btn-large">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para Vídeos -->
+    <div class="video-modal" id="video-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-container">
+                <iframe id="video-iframe" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="footer-logo">
+                        <h3 class="footer-brand-name">NaturaVet</h3>
+                    </div>
+                    <p class="footer-description">
+                        Cuidando da nutrição e bem-estar dos seus pets com amor, 
+                        dedicação e conhecimento especializado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicos.html">Consulta Nutricional</a></li>
+                        <li><a href="servicos.html">Plano Alimentar</a></li>
+                        <li><a href="servicos.html">Acompanhamento</a></li>
+                        <li><a href="servicos.html">Orientação Online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@naturavet.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NaturaVet. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components/navigation.js"></script>
+    <script src="assets/js/pages/depoimentos.js"></script>
+</body>
+</html>
