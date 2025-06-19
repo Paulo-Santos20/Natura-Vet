@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NaturaVet - Nutrição especializada para animais de estimação. Cuidado profissional para a saúde e bem-estar do seu pet.">
+    <meta name="keywords" content="nutrição animal, veterinária, pets, saúde animal, bem-estar animal">
+    <title>NaturaVet - Nutrição Especializada para Pets</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/logo-principal.jpg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+<header class="header">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="assets/images/logo/logo-principal.jpg" alt="NaturaVet Logo" class="logo">
+                <span class="brand-name">NaturaVet</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicos.html" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="depoimentos.html" class="nav-link">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item nav-item-login">
+                        <div class="auth-dropdown">
+                            <button class="auth-trigger" id="auth-trigger">
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-chevron-down auth-arrow"></i>
+                            </button>
+                            
+                            <div class="auth-menu" id="auth-menu">
+                                <div class="auth-menu-header">
+                                    <h4>Acesse sua conta</h4>
+                                    <p>Escolha seu tipo de acesso</p>
+                                </div>
+                                
+                                <div class="auth-options">
+                                    <a href="login.html?type=client" class="auth-option">
+                                        <div class="auth-option-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="auth-option-content">
+                                            <span class="auth-option-title">Cliente</span>
+                                            <span class="auth-option-desc">Acompanhe seu pet</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="login.html?type=consultant" class="auth-option">
+                                        <div class="auth-option-icon">
+                                            <i class="fas fa-user-md"></i>
+                                        </div>
+                                        <div class="auth-option-content">
+                                            <span class="auth-option-title">Consultor</span>
+                                            <span class="auth-option-desc">Área profissional</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="login.html?type=editor" class="auth-option">
+                                        <div class="auth-option-icon">
+                                            <i class="fas fa-edit"></i>
+                                        </div>
+                                        <div class="auth-option-content">
+                                            <span class="auth-option-title">Editor</span>
+                                            <span class="auth-option-desc">Gerenciar conteúdo</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="login.html?type=admin" class="auth-option">
+                                        <div class="auth-option-icon">
+                                            <i class="fas fa-cog"></i>
+                                        </div>
+                                        <div class="auth-option-content">
+                                            <span class="auth-option-title">Administrador</span>
+                                            <span class="auth-option-desc">Painel completo</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="auth-menu-footer">
+                                    <p>Não tem conta? <a href="login.html?action=register">Cadastre-se</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Nutrição Especializada para o
+                            <span class="highlight">Bem-Estar</span> do seu Pet
+                        </h1>
+                        <p class="hero-description">
+                            Cuidamos da saúde e qualidade de vida do seu animal de estimação através de
+                            planos nutricionais personalizados e acompanhamento profissional especializado.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="contato.html" class="btn btn-primary btn-large">
+                                <i class="fas fa-calendar-check"></i>
+                                Agendar Consulta
+                            </a>
+                            <a href="sobre.html" class="btn btn-secondary btn-large">
+                                <i class="fas fa-user-md"></i>
+                                Conheça a Profissional
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/images/banners/hero-pets.jpg" alt="Pets saudáveis e felizes" class="hero-img">
+                        <div class="hero-badge">
+                            <i class="fas fa-heart"></i>
+                            <span>+500 Pets Atendidos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview Section -->
+        <section class="services-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossos Serviços</h2>
+                    <p class="section-subtitle">
+                        Oferecemos cuidado completo e personalizado para a nutrição do seu pet
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3 class="service-title">Consulta Nutricional</h3>
+                        <p class="service-description">
+                            Avaliação completa das necessidades nutricionais específicas do seu pet
+                        </p>
+                        <a href="servicos.html" class="service-link">
+                            Saiba mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h3 class="service-title">Plano Alimentar</h3>
+                        <p class="service-description">
+                            Desenvolvimento de cardápios personalizados para cada fase da vida
+                        </p>
+                        <a href="servicos.html" class="service-link">
+                            Saiba mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="service-title">Acompanhamento</h3>
+                        <p class="service-description">
+                            Monitoramento contínuo da evolução nutricional e ajustes necessários
+                        </p>
+                        <a href="servicos.html" class="service-link">
+                            Saiba mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/images/team/nutrologa.jpg" alt="Dra. Nutróloga" class="about-img">
+                        <div class="experience-badge">
+                            <span class="badge-number">10+</span>
+                            <span class="badge-text">Anos de Experiência</span>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h2 class="about-title">
+                            Cuidado Profissional com
+                            <span class="highlight">Amor e Dedicação</span>
+                        </h2>
+                        <p class="about-description">
+                            Sou especialista em nutrição animal com mais de 10 anos de experiência,
+                            dedicada a proporcionar o melhor cuidado nutricional para pets de todas as idades.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Especialização em Nutrição Animal</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Atendimento Personalizado</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Acompanhamento Contínuo</span>
+                            </div>
+                        </div>
+                        <a href="sobre.html" class="btn btn-primary">
+                            Conheça Minha História
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Preview Section -->
+        <section class="testimonials-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">O que Nossos Clientes Dizem</h2>
+                    <p class="section-subtitle">
+                        Depoimentos reais de tutores que viram a transformação em seus pets
+                    </p>
+                </div>
+
+                <div class="testimonials-slider">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "A mudança no Max foi incrível! Em apenas 2 meses seguindo o plano nutricional,
+                                ele está mais ativo, com o pelo brilhante e muito mais saudável."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/testimonials/cliente-1.jpg" alt="Maria Silva"
+                                    class="author-photo">
+                                <div class="author-info">
+                                    <h4 class="author-name">Maria Silva</h4>
+                                    <span class="author-pet">Tutora do Max (Golden Retriever)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Profissional excepcional! A Luna tinha problemas digestivos e hoje está
+                                completamente recuperada. O acompanhamento é impecável."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/testimonials/cliente-2.jpg" alt="João Santos"
+                                    class="author-photo">
+                                <div class="author-info">
+                                    <h4 class="author-name">João Santos</h4>
+                                    <span class="author-pet">Tutor da Luna (Labrador)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-nav">
+                    <button class="nav-dot active" data-slide="0"></button>
+                    <button class="nav-dot" data-slide="1"></button>
+                </div>
+
+                <div class="testimonials-cta">
+                    <a href="depoimentos.html" class="btn btn-secondary">
+                        Ver Todos os Depoimentos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">
+                        Pronto para Transformar a Saúde do seu Pet?
+                    </h2>
+                    <p class="cta-description">
+                        Agende uma consulta e descubra como a nutrição adequada pode melhorar
+                        a qualidade de vida do seu animal de estimação.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contato.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-phone"></i>
+                            Agendar Consulta
+                        </a>
+                        <a href="https://wa.me/5511999999999" class="btn btn-whatsapp btn-large">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo/logo-principal.jpg" alt="NaturaVet Logo" class="footer-logo">
+                        <h3 class="footer-brand-name">NaturaVet</h3>
+                    </div>
+                    <p class="footer-description">
+                        Cuidando da nutrição e bem-estar dos seus pets com amor,
+                        dedicação e conhecimento especializado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicos.html">Consulta Nutricional</a></li>
+                        <li><a href="servicos.html">Plano Alimentar</a></li>
+                        <li><a href="servicos.html">Acompanhamento</a></li>
+                        <li><a href="servicos.html">Orientação Online</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@naturavet.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NaturaVet. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components/navigation.js"></script>
+    <script src="assets/js/components/slider.js"></script>
+</body>
+
+</html>

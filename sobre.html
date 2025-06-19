@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a Dra. Ana Paula Silva, nutróloga veterinária especializada em nutrição animal com mais de 10 anos de experiência cuidando da saúde dos pets.">
+    <meta name="keywords" content="nutróloga veterinária, Ana Paula Silva, especialista nutrição animal, veterinária, formação profissional">
+    <title>Sobre - Dra. Ana Paula Silva | NaturaVet</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/pages/sobre.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="logo">
+                    <span class="brand-name">NaturaVet</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link active">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicos.html" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="depoimentos.html" class="nav-link">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item nav-item-login">
+                            <div class="auth-dropdown">
+                                <button class="auth-trigger" id="auth-trigger">
+                                    <i class="fas fa-user"></i>
+                                    <i class="fas fa-chevron-down auth-arrow"></i>
+                                </button>
+                                
+                                <div class="auth-menu" id="auth-menu">
+                                    <div class="auth-menu-header">
+                                        <h4>Acesse sua conta</h4>
+                                        <p>Escolha seu tipo de acesso</p>
+                                    </div>
+                                    
+                                    <div class="auth-options">
+                                        <a href="login.html?type=client" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Cliente</span>
+                                                <span class="auth-option-desc">Acompanhe seu pet</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=consultant" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-user-md"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Consultor</span>
+                                                <span class="auth-option-desc">Área profissional</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=editor" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-edit"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Editor</span>
+                                                <span class="auth-option-desc">Gerenciar conteúdo</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=admin" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-cog"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Administrador</span>
+                                                <span class="auth-option-desc">Painel completo</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="auth-menu-footer">
+                                        <p>Não tem conta? <a href="login.html?action=register">Cadastre-se</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Conheça a 
+                            <span class="highlight">Dra. Ana Paula Silva</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Nutróloga Veterinária especializada em bem-estar animal
+                        </p>
+                        <p class="hero-description">
+                            Mais de 10 anos dedicados à nutrição e saúde dos animais de estimação, 
+                            com foco em tratamentos personalizados e cuidado integral.
+                        </p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/images/team/nutrologa.jpg" alt="Dra. Ana Paula Silva" class="doctor-photo">
+                        <div class="hero-badges">
+                            <div class="badge">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Especialista</span>
+                            </div>
+                            <div class="badge">
+                                <i class="fas fa-award"></i>
+                                <span>10+ Anos</span>
+                            </div>
+                            <div class="badge">
+                                <i class="fas fa-heart"></i>
+                                <span>500+ Pets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Journey Section -->
+        <section class="professional-journey">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Minha Jornada Profissional</h2>
+                    <p class="section-subtitle">
+                        Uma trajetória dedicada ao cuidado e bem-estar dos animais
+                    </p>
+                </div>
+
+                <div class="journey-content">
+                    <div class="journey-text">
+                        <p class="intro-text">
+                            Minha paixão pelos animais começou ainda na infância, quando cuidava dos pets da família 
+                            e sonhava em me tornar veterinária. Hoje, após anos de estudo e dedicação, realizo esse 
+                            sonho todos os dias através da nutrição especializada.
+                        </p>
+
+                        <div class="story-blocks">
+                            <div class="story-block">
+                                <div class="story-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <div class="story-content">
+                                    <h3>O Início</h3>
+                                    <p>
+                                        Formada em Medicina Veterinária pela USP em 2013, sempre tive interesse especial 
+                                        pela área de nutrição animal, percebendo como a alimentação adequada transformava 
+                                        a vida dos pets.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="story-block">
+                                <div class="story-icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <div class="story-content">
+                                    <h3>Especialização</h3>
+                                    <p>
+                                        Busquei aperfeiçoamento constante, realizando pós-graduação em Nutrição Animal 
+                                        e diversos cursos internacionais, sempre focada nas mais modernas técnicas 
+                                        de nutrição veterinária.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="story-block">
+                                <div class="story-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="story-content">
+                                    <h3>Missão Atual</h3>
+                                    <p>
+                                        Hoje, dedico-me integralmente à nutrição personalizada, ajudando tutores a 
+                                        proporcionarem uma vida mais saudável e feliz para seus companheiros de quatro patas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Pets Atendidos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Satisfação dos Clientes</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Cursos de Especialização</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section class="education-section">
+            <div class="container">
+                <div class="education-content">
+                    <div class="education-info">
+                        <h2 class="section-title">Formação & Certificações</h2>
+                        <p class="section-description">
+                            Educação continuada e certificações que garantem o mais alto padrão de cuidado
+                        </p>
+
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div class="education-year">2013</div>
+                                <div class="education-details">
+                                    <h3>Medicina Veterinária</h3>
+                                    <p>Universidade de São Paulo (USP)</p>
+                                    <span class="education-type">Graduação</span>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="education-year">2015</div>
+                                <div class="education-details">
+                                    <h3>Pós-graduação em Nutrição Animal</h3>
+                                    <p>Universidade Federal de Viçosa (UFV)</p>
+                                    <span class="education-type">Especialização</span>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="education-year">2018</div>
+                                <div class="education-details">
+                                    <h3>Certificação Internacional em Nutrição Clínica</h3>
+                                    <p>American College of Veterinary Nutrition</p>
+                                    <span class="education-type">Certificação</span>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="education-year">2021</div>
+                                <div class="education-details">
+                                    <h3>Mestrado em Ciências Veterinárias</h3>
+                                    <p>Universidade Federal do Rio Grande do Sul (UFRGS)</p>
+                                    <span class="education-type">Pós-graduação</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certifications-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>CRMV-SP</h4>
+                            <p>Registro Profissional<br>Ativo desde 2013</p>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h4>ACVN</h4>
+                            <p>American College of<br>Veterinary Nutrition</p>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>WSAVA</h4>
+                            <p>World Small Animal<br>Veterinary Association</p>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h4>CBNA</h4>
+                            <p>Colégio Brasileiro de<br>Nutrição Animal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="philosophy-section">
+            <div class="container">
+                <div class="philosophy-content">
+                    <div class="philosophy-text">
+                        <h2 class="section-title">Minha Filosofia de Trabalho</h2>
+                        <div class="philosophy-quote">
+                            <blockquote>
+                                "Acredito que cada animal é único, com necessidades nutricionais específicas. 
+                                Meu trabalho é ouvir, compreender e criar soluções personalizadas que 
+                                promovam não apenas a saúde, mas a felicidade dos pets e a tranquilidade dos tutores."
+                            </blockquote>
+                            <cite>- Dra. Ana Paula Silva</cite>
+                        </div>
+
+                        <div class="philosophy-principles">
+                            <div class="principle">
+                                <div class="principle-icon">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div class="principle-content">
+                                    <h3>Cuidado Individualizado</h3>
+                                    <p>Cada pet recebe um plano nutricional único, baseado em suas necessidades específicas, idade, raça e condições de saúde.</p>
+                                </div>
+                            </div>
+
+                            <div class="principle">
+                                <div class="principle-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="principle-content">
+                                    <h3>Parceria com o Tutor</h3>
+                                    <p>Trabalho em conjunto com os tutores, educando e orientando para que possam dar continuidade ao tratamento em casa.</p>
+                                </div>
+                            </div>
+
+                            <div class="principle">
+                                <div class="principle-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="principle-content">
+                                    <h3>Abordagem Natural</h3>
+                                    <p>Priorizo soluções naturais e sustentáveis, sempre que possível, respeitando o organismo do animal.</p>
+                                </div>
+                            </div>
+
+                            <div class="principle">
+                                <div class="principle-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="principle-content">
+                                    <h3>Acompanhamento Contínuo</h3>
+                                    <p>Monitoro constantemente a evolução de cada caso, ajustando o tratamento conforme necessário.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialties Section -->
+        <section class="specialties-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Áreas de Especialização</h2>
+                    <p class="section-subtitle">
+                        Expertise focada nas principais necessidades nutricionais dos pets
+                    </p>
+                </div>
+
+                <div class="specialties-grid">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-weight"></i>
+                        </div>
+                        <h3>Controle de Peso</h3>
+                        <p>Programas especializados para pets com sobrepeso ou obesidade, com foco em emagrecimento saudável e sustentável.</p>
+                        <ul class="specialty-features">
+                            <li>Dietas hipocalóricas balanceadas</li>
+                            <li>Planos de exercícios adaptados</li>
+                            <li>Monitoramento contínuo</li>
+                        </ul>
+                    </div>
+
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Doenças Crônicas</h3>
+                        <p>Nutrição terapêutica para pets com diabetes, doenças renais, cardíacas e outras condições crônicas.</p>
+                        <ul class="specialty-features">
+                            <li>Dietas terapêuticas específicas</li>
+                            <li>Controle glicêmico</li>
+                            <li>Suporte nutricional especializado</li>
+                        </ul>
+                    </div>
+
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Filhotes e Idosos</h3>
+                        <p>Nutrição adequada para cada fase da vida, desde filhotes em crescimento até pets idosos com necessidades especiais.</p>
+                        <ul class="specialty-features">
+                            <li>Nutrição para crescimento</li>
+                            <li>Cuidados geriátricos</li>
+                            <li>Suplementação adequada</li>
+                        </ul>
+                    </div>
+
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-allergies"></i>
+                        </div>
+                        <h3>Alergias Alimentares</h3>
+                        <p>Diagnóstico e tratamento de alergias e intolerâncias alimentares através de dietas de eliminação e hipoalergênicas.</p>
+                        <ul class="specialty-features">
+                            <li>Testes de eliminação</li>
+                            <li>Dietas hipoalergênicas</li>
+                            <li>Identificação de alérgenos</li>
+                        </ul>
+                    </div>
+
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Performance Esportiva</h3>
+                        <p>Nutrição especializada para cães atletas e de trabalho, otimizando performance e recuperação.</p>
+                        <ul class="specialty-features">
+                            <li>Dietas de alta performance</li>
+                            <li>Suplementação esportiva</li>
+                            <li>Recuperação muscular</li>
+                        </ul>
+                    </div>
+
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Nutrição Natural</h3>
+                        <p>Alimentação natural e caseira balanceada, com ingredientes frescos e naturais adequados para cada pet.</p>
+                        <ul class="specialty-features">
+                            <li>Dietas caseiras balanceadas</li>
+                            <li>Ingredientes naturais</li>
+                            <li>Receitas personalizadas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">
+                        Pronto para Cuidar Melhor do seu Pet?
+                    </h2>
+                    <p class="cta-description">
+                        Agende uma consulta e descubra como posso ajudar seu animal de estimação 
+                        a ter uma vida mais saudável e feliz através da nutrição adequada.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contato.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-check"></i>
+                            Agendar Consulta
+                        </a>
+                        <a href="servicos.html" class="btn btn-secondary btn-large">
+                            <i class="fas fa-list"></i>
+                            Ver Serviços
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="footer-logo">
+                        <h3 class="footer-brand-name">NaturaVet</h3>
+                    </div>
+                    <p class="footer-description">
+                        Cuidando da nutrição e bem-estar dos seus pets com amor, 
+                        dedicação e conhecimento especializado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicos.html">Consulta Nutricional</a></li>
+                        <li><a href="servicos.html">Plano Alimentar</a></li>
+                        <li><a href="servicos.html">Acompanhamento</a></li>
+                        <li><a href="servicos.html">Orientação Online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@naturavet.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NaturaVet. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components/navigation.js"></script>
+</body>
+</html>
