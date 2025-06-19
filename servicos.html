@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça todos os serviços de nutrição animal da NaturaVet: consultas nutricionais, planos alimentares personalizados, acompanhamento e orientação online.">
+    <meta name="keywords" content="serviços nutrição animal, consulta nutricional veterinária, plano alimentar pets, acompanhamento nutricional">
+    <title>Serviços - Nutrição Especializada para Pets | NaturaVet</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/pages/servicos.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo/logo-principal.jpg" alt="NaturaVet Logo" class="logo">
+                    <span class="brand-name">NaturaVet</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicos.html" class="nav-link active">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="depoimentos.html" class="nav-link">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item nav-item-login">
+                            <div class="auth-dropdown">
+                                <button class="auth-trigger" id="auth-trigger">
+                                    <i class="fas fa-user"></i>
+                                    <i class="fas fa-chevron-down auth-arrow"></i>
+                                </button>
+                                
+                                <div class="auth-menu" id="auth-menu">
+                                    <div class="auth-menu-header">
+                                        <h4>Acesse sua conta</h4>
+                                        <p>Escolha seu tipo de acesso</p>
+                                    </div>
+                                    
+                                    <div class="auth-options">
+                                        <a href="login.html?type=client" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Cliente</span>
+                                                <span class="auth-option-desc">Acompanhe seu pet</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=consultant" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-user-md"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Consultor</span>
+                                                <span class="auth-option-desc">Área profissional</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=editor" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-edit"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Editor</span>
+                                                <span class="auth-option-desc">Gerenciar conteúdo</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=admin" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-cog"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Administrador</span>
+                                                <span class="auth-option-desc">Painel completo</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="auth-menu-footer">
+                                        <p>Não tem conta? <a href="login.html?action=register">Cadastre-se</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="services-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Nossos <span class="highlight">Serviços</span>
+                    </h1>
+                    <p class="hero-description">
+                        Oferecemos uma gama completa de serviços especializados em nutrição animal, 
+                        desenvolvidos para atender às necessidades específicas de cada pet e proporcionar 
+                        uma vida mais saudável e feliz.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Services Section -->
+        <section class="main-services">
+            <div class="container">
+                <div class="services-grid">
+                    <!-- Consulta Nutricional -->
+                    <div class="service-card featured">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <div class="service-badge">Mais Procurado</div>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="service-title">Consulta Nutricional</h2>
+                            <p class="service-description">
+                                Avaliação completa e personalizada das necessidades nutricionais do seu pet, 
+                                incluindo análise do histórico médico, estilo de vida e objetivos de saúde.
+                            </p>
+                            
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Avaliação nutricional completa</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Análise do histórico médico</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Exame físico direcionado</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Relatório detalhado</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duração: 60-90 minutos</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Presencial ou Online</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-price">
+                                <span class="price-label">A partir de</span>
+                                <span class="price-value">R$ 180</span>
+                            </div>
+                            
+                            <a href="contato.html?service=consulta" class="btn btn-primary btn-full">
+                                Agendar Consulta
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plano Alimentar Personalizado -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="service-title">Plano Alimentar Personalizado</h2>
+                            <p class="service-description">
+                                Desenvolvimento de cardápios específicos e balanceados, adaptados às 
+                                necessidades individuais, preferências e restrições alimentares do seu pet.
+                            </p>
+                            
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Cardápio personalizado</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Receitas detalhadas</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Lista de compras</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Guia de preparo</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Plano mensal</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Todas as refeições</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-price">
+                                <span class="price-label">A partir de</span>
+                                <span class="price-value">R$ 250</span>
+                            </div>
+                            
+                            <a href="contato.html?service=plano" class="btn btn-primary btn-full">
+                                Solicitar Plano
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Acompanhamento Nutricional -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="service-title">Acompanhamento Nutricional</h2>
+                            <p class="service-description">
+                                Monitoramento contínuo da evolução nutricional do seu pet, com ajustes 
+                                regulares no plano alimentar e suporte constante para otimizar os resultados.
+                            </p>
+                            
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Consultas de retorno</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Ajustes no plano</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Suporte via WhatsApp</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Relatórios de progresso</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-sync"></i>
+                                    <span>Consultas quinzenais</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Suporte 24/7</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-price">
+                                <span class="price-label">A partir de</span>
+                                <span class="price-value">R$ 120</span>
+                            </div>
+                            
+                            <a href="contato.html?service=acompanhamento" class="btn btn-primary btn-full">
+                                Iniciar Acompanhamento
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Orientação Online -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="service-title">Orientação Online</h2>
+                            <p class="service-description">
+                                Consultas e orientações nutricionais realizadas por videoconferência, 
+                                oferecendo praticidade e comodidade sem comprometer a qualidade do atendimento.
+                            </p>
+                            
+                            <div class="service-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Consulta por vídeo</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Flexibilidade de horários</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Material digital</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Gravação da consulta</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Atendimento nacional</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Horários flexíveis</span>
+                                </div>
+                            </div>
+                            
+                            <div class="service-price">
+                                <span class="price-label">A partir de</span>
+                                <span class="price-value">R$ 150</span>
+                            </div>
+                            
+                            <a href="contato.html?service=online" class="btn btn-primary btn-full">
+                                Agendar Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Services Section -->
+        <section class="specialized-services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Serviços Especializados</h2>
+                    <p class="section-subtitle">
+                        Tratamentos específicos para necessidades especiais dos pets
+                    </p>
+                </div>
+
+                <div class="specialized-grid">
+                    <div class="specialized-card">
+                        <div class="specialized-icon">
+                            <i class="fas fa-weight"></i>
+                        </div>
+                        <h3>Controle de Peso</h3>
+                        <p>Programas específicos para emagrecimento ou ganho de peso saudável</p>
+                        <div class="specialized-price">R$ 200</div>
+                    </div>
+
+                    <div class="specialized-card">
+                        <div class="specialized-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Nutrição Terapêutica</h3>
+                        <p>Dietas especiais para pets com doenças crônicas ou condições específicas</p>
+                        <div class="specialized-price">R$ 220</div>
+                    </div>
+
+                    <div class="specialized-card">
+                        <div class="specialized-icon">
+                            <i class="fas fa-allergies"></i>
+                        </div>
+                        <h3>Alergias Alimentares</h3>
+                        <p>Diagnóstico e tratamento de alergias através de dietas de eliminação</p>
+                        <div class="specialized-price">R$ 190</div>
+                    </div>
+
+                    <div class="specialized-card">
+                        <div class="specialized-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Filhotes e Idosos</h3>
+                        <p>Nutrição adequada para cada fase da vida do seu pet</p>
+                        <div class="specialized-price">R$ 170</div>
+                    </div>
+
+                    <div class="specialized-card">
+                        <div class="specialized-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Performance Esportiva</h3>
+                        <p>Nutrição otimizada para cães atletas e de trabalho</p>
+                        <div class="specialized-price">R$ 250</div>
+                    </div>
+
+                    <div class="specialized-card">
+                        <div class="specialized-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Alimentação Natural</h3>
+                        <p>Dietas caseiras balanceadas com ingredientes frescos e naturais</p>
+                        <div class="specialized-price">R$ 180</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Funciona</h2>
+                    <p class="section-subtitle">
+                        Nosso processo simples e eficiente para cuidar da nutrição do seu pet
+                    </p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Agendamento</h3>
+                            <p>Entre em contato conosco e agende sua consulta no horário mais conveniente</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Avaliação Inicial</h3>
+                            <p>Realizamos uma avaliação completa do seu pet, incluindo histórico e exame físico</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Plano Personalizado</h3>
+                            <p>Desenvolvemos um plano nutricional específico para as necessidades do seu pet</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Acompanhamento</h3>
+                            <p>Monitoramos a evolução e fazemos ajustes necessários para otimizar os resultados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section class="packages-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Pacotes Promocionais</h2>
+                    <p class="section-subtitle">
+                        Economize contratando nossos pacotes completos de cuidado nutricional
+                    </p>
+                </div>
+
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Básico</h3>
+                            <div class="package-price">
+                                <span class="price-currency">R$</span>
+                                <span class="price-amount">320</span>
+                                <span class="price-period">/mês</span>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> 1 Consulta nutricional</li>
+                                <li><i class="fas fa-check"></i> Plano alimentar personalizado</li>
+                                <li><i class="fas fa-check"></i> Suporte via WhatsApp</li>
+                                <li><i class="fas fa-check"></i> 1 Consulta de retorno</li>
+                            </ul>
+                            <a href="contato.html?package=basico" class="btn btn-secondary btn-full">
+                                Escolher Básico
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="package-card featured">
+                        <div class="package-badge">Mais Popular</div>
+                        <div class="package-header">
+                            <h3 class="package-name">Completo</h3>
+                            <div class="package-price">
+                                <span class="price-currency">R$</span>
+                                <span class="price-amount">580</span>
+                                <span class="price-period">/mês</span>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> 2 Consultas nutricionais</li>
+                                <li><i class="fas fa-check"></i> Plano alimentar personalizado</li>
+                                <li><i class="fas fa-check"></i> Acompanhamento quinzenal</li>
+                                <li><i class="fas fa-check"></i> Suporte 24/7</li>
+                                <li><i class="fas fa-check"></i> Relatórios de progresso</li>
+                                <li><i class="fas fa-check"></i> Ajustes ilimitados</li>
+                            </ul>
+                            <a href="contato.html?package=completo" class="btn btn-primary btn-full">
+                                Escolher Completo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Premium</h3>
+                            <div class="package-price">
+                                <span class="price-currency">R$</span>
+                                <span class="price-amount">850</span>
+                                <span class="price-period">/mês</span>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Consultas ilimitadas</li>
+                                <li><i class="fas fa-check"></i> Planos alimentares múltiplos</li>
+                                <li><i class="fas fa-check"></i> Acompanhamento semanal</li>
+                                <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                                <li><i class="fas fa-check"></i> Consultas domiciliares</li>
+                                <li><i class="fas fa-check"></i> Receitas exclusivas</li>
+                                <li><i class="fas fa-check"></i> Desconto em produtos</li>
+                            </ul>
+                            <a href="contato.html?package=premium" class="btn btn-secondary btn-full">
+                                Escolher Premium
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <p class="section-subtitle">
+                        Esclarecemos as principais dúvidas sobre nossos serviços
+                    </p>
+                </div>
+
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quanto tempo dura uma consulta nutricional?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A consulta inicial tem duração de 60 a 90 minutos, tempo necessário para uma avaliação completa do seu pet, análise do histórico médico e desenvolvimento do plano nutricional personalizado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>É possível fazer consultas online?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Oferecemos consultas por videoconferência com a mesma qualidade do atendimento presencial. É uma opção prática para quem tem dificuldades de locomoção ou mora em outras cidades.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Com que frequência devo fazer o acompanhamento?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A frequência varia conforme as necessidades do seu pet. Geralmente recomendamos consultas quinzenais nos primeiros dois meses e depois mensais para manutenção dos resultados.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Vocês atendem todos os tipos de animais?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Especializamo-nos em cães e gatos de todas as idades e raças. Para outros animais, recomendamos entrar em contato para avaliarmos cada caso específico.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Os planos alimentares incluem receitas caseiras?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Desenvolvemos tanto dietas com ração comercial quanto receitas caseiras balanceadas, sempre respeitando as preferências do tutor e as necessidades nutricionais do pet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">
+                        Pronto para Transformar a Vida do seu Pet?
+                    </h2>
+                    <p class="cta-description">
+                        Agende agora uma consulta e descubra como nossos serviços especializados 
+                        podem melhorar a saúde e qualidade de vida do seu animal de estimação.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contato.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-check"></i>
+                            Agendar Consulta
+                        </a>
+                        <a href="https://wa.me/5511999999999"  class="btn btn-whatsapp btn-large">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="footer-logo">
+                        <h3 class="footer-brand-name">NaturaVet</h3>
+                    </div>
+                    <p class="footer-description">
+                        Cuidando da nutrição e bem-estar dos seus pets com amor, 
+                        dedicação e conhecimento especializado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicos.html">Consulta Nutricional</a></li>
+                        <li><a href="servicos.html">Plano Alimentar</a></li>
+                        <li><a href="servicos.html">Acompanhamento</a></li>
+                        <li><a href="servicos.html">Orientação Online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@naturavet.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NaturaVet. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components/navigation.js"></script>
+    <script src="assets/js/pages/servicos.js"></script>
+</body>
+</html>
