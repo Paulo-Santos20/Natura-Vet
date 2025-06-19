@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog NaturaVet - Dicas de nutrição animal, cuidados com pets, receitas saudáveis e conteúdo especializado sobre bem-estar animal.">
+    <meta name="keywords" content="blog nutrição animal, dicas pets, receitas para cães, cuidados gatos, bem-estar animal, veterinária">
+    <title>Blog - Dicas e Conteúdo sobre Nutrição Animal | NaturaVet</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/pages/blog.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo/logo-principal.jpg" alt="NaturaVet Logo" class="logo">
+                    <span class="brand-name">NaturaVet</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicos.html" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="depoimentos.html" class="nav-link">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link active">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item nav-item-login">
+                            <div class="auth-dropdown">
+                                <button class="auth-trigger" id="auth-trigger">
+                                    <i class="fas fa-user"></i>
+                                    <i class="fas fa-chevron-down auth-arrow"></i>
+                                </button>
+                                
+                                <div class="auth-menu" id="auth-menu">
+                                    <div class="auth-menu-header">
+                                        <h4>Acesse sua conta</h4>
+                                        <p>Escolha seu tipo de acesso</p>
+                                    </div>
+                                    
+                                    <div class="auth-options">
+                                        <a href="login.html?type=client" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Cliente</span>
+                                                <span class="auth-option-desc">Acompanhe seu pet</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=consultant" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-user-md"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Consultor</span>
+                                                <span class="auth-option-desc">Área profissional</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=editor" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-edit"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Editor</span>
+                                                <span class="auth-option-desc">Gerenciar conteúdo</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=admin" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-cog"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Administrador</span>
+                                                <span class="auth-option-desc">Painel completo</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="auth-menu-footer">
+                                        <p>Não tem conta? <a href="login.html?action=register">Cadastre-se</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+       <!-- Hero Section - Versão Compacta -->
+<section class="blog-hero">
+    <div class="container">
+        <div class="hero-content">            
+            <p class="hero-description">
+                Dicas valiosas sobre nutrição animal, receitas saudáveis e cuidados especiais para o bem-estar do seu pet.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <!-- Search and Filter Section -->
+        <section class="search-filter-section">
+            <div class="container">
+                <div class="search-filter-content">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Buscar posts..." class="search-input">
+                        <button class="search-btn" id="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="filter-controls">
+                        <div class="content-type-filter">
+                            <button class="content-type-btn active" data-type="all">
+                                <i class="fas fa-th"></i>
+                                Todos
+                            </button>
+                            <button class="content-type-btn" data-type="blog">
+                                <i class="fas fa-newspaper"></i>
+                                Artigos do Blog
+                            </button>
+                            <button class="content-type-btn" data-type="instagram">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </button>
+                        </div>
+                        
+                        <div class="category-filter">
+                            <select id="category-filter" class="category-select">
+                                <option value="all">Todas as Categorias</option>
+                                <option value="nutricao">Nutrição</option>
+                                <option value="receitas">Receitas</option>
+                                <option value="cuidados">Cuidados</option>
+                                <option value="dicas">Dicas</option>
+                                <option value="saude">Saúde</option>
+                                <option value="comportamento">Comportamento</option>
+                            </select>
+                        </div>
+                        
+                        <div class="sort-filter">
+                            <select id="sort-filter" class="sort-select">
+                                <option value="newest">Mais Recentes</option>
+                                <option value="oldest">Mais Antigos</option>
+                                <option value="popular">Mais Populares</option>
+                                <option value="trending">Em Alta</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Posts Section -->
+        <section class="featured-posts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Posts em Destaque</h2>
+                    <p class="section-subtitle">
+                        Conteúdo selecionado especialmente para você
+                    </p>
+                </div>
+
+                <div class="featured-grid">
+                    <!-- Featured Post 1 -->
+                    <article class="featured-post" data-type="blog" data-category="nutricao">
+                        <div class="post-image">
+                            <img src="assets/images/blog/featured-1.jpg" alt="Nutrição para cães idosos">
+                            <div class="post-badge">Destaque</div>
+                            <div class="post-type">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Nutrição</span>
+                                <span class="post-date">15 Jan 2025</span>
+                                <span class="post-read-time">5 min</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="blog-posts/nutricao-caes-idosos.html">
+                                    Nutrição Especial para Cães Idosos: Guia Completo
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                Descubra como adaptar a alimentação do seu cão idoso para garantir 
+                                qualidade de vida, energia e saúde na terceira idade.
+                            </p>
+                            <div class="post-stats">
+                                <span class="post-views">
+                                    <i class="fas fa-eye"></i> 2.5k visualizações
+                                </span>
+                                <span class="post-likes">
+                                    <i class="fas fa-heart"></i> 156 curtidas
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Featured Post 2 -->
+                    <article class="featured-post" data-type="blog" data-category="receitas">
+                        <div class="post-image">
+                            <img src="assets/images/blog/featured-2.jpg" alt="Receitas naturais para pets">
+                            <div class="post-badge">Novo</div>
+                            <div class="post-type">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Receitas</span>
+                                <span class="post-date">12 Jan 2025</span>
+                                <span class="post-read-time">8 min</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="blog-posts/receitas-naturais-pets.html">
+                                    5 Receitas Naturais e Saudáveis para seu Pet
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                Prepare refeições caseiras nutritivas e deliciosas com ingredientes 
+                                naturais que seu pet vai adorar.
+                            </p>
+                            <div class="post-stats">
+                                <span class="post-views">
+                                    <i class="fas fa-eye"></i> 3.2k visualizações
+                                </span>
+                                <span class="post-likes">
+                                    <i class="fas fa-heart"></i> 289 curtidas
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <section class="main-content-section">
+            <div class="container">
+                <div class="content-layout">
+                    <!-- Posts Grid -->
+                    <div class="posts-container">
+                        <div class="posts-header">
+                            <h2>Todos os Posts</h2>
+                            <div class="results-info">
+                                <span id="results-count">Carregando...</span>
+                            </div>
+                        </div>
+
+                        <!-- Loading State -->
+                        <div class="loading-state" id="loading-state">
+                            <div class="loading-spinner"></div>
+                            <p>Carregando conteúdo...</p>
+                        </div>
+
+                        <!-- Posts Grid -->
+                        <div class="posts-grid" id="posts-grid">
+                            <!-- Posts serão carregados dinamicamente via JavaScript -->
+                        </div>
+
+                        <!-- Load More Button -->
+                        <div class="load-more-section">
+                            <button class="btn btn-secondary load-more-btn" id="load-more-btn">
+                                <i class="fas fa-plus"></i>
+                                Carregar Mais Posts
+                            </button>
+                        </div>
+
+                        <!-- No Results State -->
+                        <div class="no-results" id="no-results" style="display: none;">
+                            <div class="no-results-content">
+                                <i class="fas fa-search"></i>
+                                <h3>Nenhum post encontrado</h3>
+                                <p>Tente ajustar os filtros ou termos de busca</p>
+                                <button class="btn btn-primary" onclick="clearFilters()">
+                                    Limpar Filtros
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <!-- Categories Widget -->
+                        <div class="widget categories-widget">
+                            <h3 class="widget-title">Categorias</h3>
+                            <ul class="categories-list">
+                                <li><a href="#" data-category="nutricao">Nutrição <span>(24)</span></a></li>
+                                <li><a href="#" data-category="receitas">Receitas <span>(18)</span></a></li>
+                                <li><a href="#" data-category="cuidados">Cuidados <span>(15)</span></a></li>
+                                <li><a href="#" data-category="dicas">Dicas <span>(32)</span></a></li>
+                                <li><a href="#" data-category="saude">Saúde <span>(21)</span></a></li>
+                                <li><a href="#" data-category="comportamento">Comportamento <span>(12)</span></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Popular Posts Widget -->
+                        <div class="widget popular-posts-widget">
+                            <h3 class="widget-title">Posts Populares</h3>
+                            <div class="popular-posts-list">
+                                <article class="popular-post">
+                                    <img src="assets/images/blog/popular-1.jpg" alt="Post popular">
+                                    <div class="popular-post-content">
+                                        <h4><a href="#">Como Identificar Alergias Alimentares em Pets</a></h4>
+                                        <span class="popular-post-date">10 Jan 2025</span>
+                                    </div>
+                                </article>
+                                <article class="popular-post">
+                                    <img src="assets/images/blog/popular-2.jpg" alt="Post popular">
+                                    <div class="popular-post-content">
+                                        <h4><a href="#">Suplementos Naturais para Cães</a></h4>
+                                        <span class="popular-post-date">8 Jan 2025</span>
+                                    </div>
+                                </article>
+                                <article class="popular-post">
+                                    <img src="assets/images/blog/popular-3.jpg" alt="Post popular">
+                                    <div class="popular-post-content">
+                                        <h4><a href="#">Hidratação Adequada para Gatos</a></h4>
+                                        <span class="popular-post-date">5 Jan 2025</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Instagram Feed Widget -->
+                        <div class="widget instagram-widget">
+                            <h3 class="widget-title">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </h3>
+                            <div class="instagram-feed" id="instagram-feed">
+                                <!-- Instagram posts serão carregados dinamicamente -->
+                            </div>
+                            <a href="https://instagram.com/naturavet"  class="instagram-follow-btn">
+                                <i class="fab fa-instagram"></i>
+                                Seguir no Instagram
+                            </a>
+                        </div>
+
+                        <!-- Newsletter Widget -->
+                        <div class="widget newsletter-widget">
+                            <h3 class="widget-title">Newsletter</h3>
+                            <p class="newsletter-description">
+                                Receba dicas exclusivas sobre nutrição animal diretamente no seu e-mail.
+                            </p>
+                            <form class="newsletter-form" id="newsletter-form">
+                                <input type="email" placeholder="Seu melhor e-mail" required>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Inscrever-se
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Tags Widget -->
+                        <div class="widget tags-widget">
+                            <h3 class="widget-title">Tags Populares</h3>
+                            <div class="tags-cloud">
+                                <a href="#" class="tag">nutrição</a>
+                                <a href="#" class="tag">receitas</a>
+                                <a href="#" class="tag">cães</a>
+                                <a href="#" class="tag">gatos</a>
+                                <a href="#" class="tag">saúde</a>
+                                <a href="#" class="tag">alimentação natural</a>
+                                <a href="#" class="tag">suplementos</a>
+                                <a href="#" class="tag">dicas</a>
+                                <a href="#" class="tag">cuidados</a>
+                                <a href="#" class="tag">bem-estar</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">
+                        Quer Conteúdo Personalizado para seu Pet?
+                    </h2>
+                    <p class="cta-description">
+                        Agende uma consulta e receba orientações específicas sobre nutrição 
+                        e cuidados ideais para seu animal de estimação.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contato.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-check"></i>
+                            Agendar Consulta
+                        </a>
+                        <a href="https://wa.me/5511999999999"  class="btn btn-whatsapp btn-large">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="footer-logo">
+                        <h3 class="footer-brand-name">NaturaVet</h3>
+                    </div>
+                    <p class="footer-description">
+                        Cuidando da nutrição e bem-estar dos seus pets com amor, 
+                        dedicação e conhecimento especializado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Categorias do Blog</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html?category=nutricao">Nutrição</a></li>
+                        <li><a href="blog.html?category=receitas">Receitas</a></li>
+                        <li><a href="blog.html?category=cuidados">Cuidados</a></li>
+                        <li><a href="blog.html?category=dicas">Dicas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@naturavet.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NaturaVet. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components/navigation.js"></script>
+    <script src="assets/js/pages/blog.js"></script>
+</body>
+</html>
