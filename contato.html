@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a NaturaVet. Agende sua consulta de nutrição animal, tire dúvidas e receba orientações especializadas para seu pet.">
+    <meta name="keywords" content="contato NaturaVet, agendar consulta veterinária, nutrição animal São Paulo, consulta pet">
+    <title>Contato - Agende sua Consulta | NaturaVet</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/components/forms.css">
+    <link rel="stylesheet" href="assets/css/pages/contato.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="logo">
+                    <span class="brand-name">NaturaVet</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="servicos.html" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="depoimentos.html" class="nav-link">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link active">Contato</a>
+                        </li>
+                        <li class="nav-item nav-item-login">
+                            <div class="auth-dropdown">
+                                <button class="auth-trigger" id="auth-trigger">
+                                    <i class="fas fa-user"></i>
+                                    <i class="fas fa-chevron-down auth-arrow"></i>
+                                </button>
+                                
+                                <div class="auth-menu" id="auth-menu">
+                                    <div class="auth-menu-header">
+                                        <h4>Acesse sua conta</h4>
+                                        <p>Escolha seu tipo de acesso</p>
+                                    </div>
+                                    
+                                    <div class="auth-options">
+                                        <a href="login.html?type=client" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Cliente</span>
+                                                <span class="auth-option-desc">Acompanhe seu pet</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=consultant" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-user-md"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Consultor</span>
+                                                <span class="auth-option-desc">Área profissional</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=editor" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-edit"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Editor</span>
+                                                <span class="auth-option-desc">Gerenciar conteúdo</span>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="login.html?type=admin" class="auth-option">
+                                            <div class="auth-option-icon">
+                                                <i class="fas fa-cog"></i>
+                                            </div>
+                                            <div class="auth-option-content">
+                                                <span class="auth-option-title">Administrador</span>
+                                                <span class="auth-option-desc">Painel completo</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="auth-menu-footer">
+                                        <p>Não tem conta? <a href="login.html?action=register">Cadastre-se</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Entre em <span class="highlight">Contato</span>
+                    </h1>
+                    <p class="hero-description">
+                        Estamos prontos para ajudar você e seu pet. Agende uma consulta, 
+                        tire suas dúvidas ou solicite mais informações sobre nossos serviços.
+                    </p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Resposta em até 2 horas</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Agendamento flexível</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-video"></i>
+                            <span>Consultas online disponíveis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Section -->
+        <section class="quick-contact">
+            <div class="container">
+                <div class="quick-contact-grid">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Atendimento rápido e direto</p>
+                        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta."  class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            (11) 99999-9999
+                        </a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Telefone</h3>
+                        <p>Ligue para agendar sua consulta</p>
+                        <a href="tel:+5511999999999" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            (11) 99999-9999
+                        </a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>E-mail</h3>
+                        <p>Envie sua mensagem detalhada</p>
+                        <a href="mailto:contato@naturavet.com.br" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            contato@naturavet.com.br
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Contact Section -->
+        <section class="main-contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h2>Agende sua Consulta</h2>
+                            <p>Preencha o formulário abaixo e entraremos em contato em breve para confirmar seu agendamento.</p>
+                        </div>
+
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nome">Nome Completo *</label>
+                                    <input type="text" id="nome" name="nome" required>
+                                    <span class="form-error" id="nome-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="form-error" id="email-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="telefone">Telefone/WhatsApp *</label>
+                                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                                    <span class="form-error" id="telefone-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cidade">Cidade</label>
+                                    <input type="text" id="cidade" name="cidade" placeholder="São Paulo, SP">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pet-nome">Nome do Pet *</label>
+                                    <input type="text" id="pet-nome" name="pet-nome" required>
+                                    <span class="form-error" id="pet-nome-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pet-especie">Espécie *</label>
+                                    <select id="pet-especie" name="pet-especie" required>
+                                        <option value="">Selecione</option>
+                                        <option value="cao">Cão</option>
+                                        <option value="gato">Gato</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                    <span class="form-error" id="pet-especie-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pet-raca">Raça</label>
+                                    <input type="text" id="pet-raca" name="pet-raca" placeholder="Ex: Golden Retriever, SRD">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pet-idade">Idade *</label>
+                                    <input type="text" id="pet-idade" name="pet-idade" placeholder="Ex: 3 anos, 6 meses" required>
+                                    <span class="form-error" id="pet-idade-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pet-peso">Peso Atual (kg)</label>
+                                <input type="number" id="pet-peso" name="pet-peso" step="0.1" placeholder="Ex: 25.5">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="servico">Tipo de Serviço *</label>
+                                <select id="servico" name="servico" required>
+                                    <option value="">Selecione o serviço</option>
+                                    <option value="consulta">Consulta Nutricional</option>
+                                    <option value="plano">Plano Alimentar Personalizado</option>
+                                    <option value="acompanhamento">Acompanhamento Nutricional</option>
+                                    <option value="online">Orientação Online</option>
+                                    <option value="controle-peso">Controle de Peso</option>
+                                    <option value="nutricao-terapeutica">Nutrição Terapêutica</option>
+                                    <option value="alergias">Alergias Alimentares</option>
+                                    <option value="filhotes-idosos">Filhotes e Idosos</option>
+                                    <option value="performance">Performance Esportiva</option>
+                                    <option value="alimentacao-natural">Alimentação Natural</option>
+                                </select>
+                                <span class="form-error" id="servico-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="modalidade">Modalidade de Atendimento *</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="modalidade" value="presencial" required>
+                                        <span class="radio-custom"></span>
+                                        <span class="radio-label">
+                                            <strong>Presencial</strong>
+                                            <small>Consulta no consultório</small>
+                                        </span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="modalidade" value="online" required>
+                                        <span class="radio-custom"></span>
+                                        <span class="radio-label">
+                                            <strong>Online</strong>
+                                            <small>Consulta por videoconferência</small>
+                                        </span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="modalidade" value="domiciliar" required>
+                                        <span class="radio-custom"></span>
+                                        <span class="radio-label">
+                                            <strong>Domiciliar</strong>
+                                            <small>Atendimento em casa (taxa adicional)</small>
+                                        </span>
+                                    </label>
+                                </div>
+                                <span class="form-error" id="modalidade-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="data-preferencia">Data de Preferência</label>
+                                <input type="date" id="data-preferencia" name="data-preferencia">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="horario-preferencia">Horário de Preferência</label>
+                                <select id="horario-preferencia" name="horario-preferencia">
+                                    <option value="">Selecione um horário</option>
+                                    <option value="manha">Manhã (8h às 12h)</option>
+                                    <option value="tarde">Tarde (13h às 17h)</option>
+                                    <option value="noite">Noite (18h às 20h)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="problema-principal">Problema Principal ou Objetivo</label>
+                                <textarea id="problema-principal" name="problema-principal" rows="4" 
+                                         placeholder="Descreva brevemente o problema que seu pet está enfrentando ou o objetivo que você gostaria de alcançar com a consulta nutricional..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="historico-medico">Histórico Médico Relevante</label>
+                                <textarea id="historico-medico" name="historico-medico" rows="3" 
+                                         placeholder="Informe sobre doenças, cirurgias, medicamentos em uso, alergias conhecidas..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="alimentacao-atual">Alimentação Atual</label>
+                                <textarea id="alimentacao-atual" name="alimentacao-atual" rows="3" 
+                                         placeholder="Descreva a alimentação atual do seu pet (ração, petiscos, comida caseira, frequência das refeições...)"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem Adicional</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" 
+                                         placeholder="Alguma informação adicional que considera importante ou dúvidas específicas..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="aceita-termos" required>
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-label">
+                                        Aceito os <a href="#" >termos de uso</a> e 
+                                        <a href="#" >política de privacidade</a> *
+                                    </span>
+                                </label>
+                                <span class="form-error" id="aceita-termos-error"></span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="aceita-newsletter">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-label">
+                                        Desejo receber dicas e novidades sobre nutrição animal por e-mail
+                                    </span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-full" id="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Solicitação
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info Sidebar -->
+                    <div class="contact-info-sidebar">
+                        <!-- Contact Details -->
+                        <div class="info-card">
+                            <h3>Informações de Contato</h3>
+                            <div class="contact-details">
+                                <div class="contact-detail">
+                                    <div class="detail-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <strong>Endereço</strong>
+                                        <p>Rua das Flores, 123<br>Vila Madalena, São Paulo - SP<br>CEP: 05432-000</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail">
+                                    <div class="detail-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <strong>Telefone</strong>
+                                        <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail">
+                                    <div class="detail-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <strong>E-mail</strong>
+                                        <p><a href="mailto:contato@naturavet.com.br">contato@naturavet.com.br</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail">
+                                    <div class="detail-icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <strong>WhatsApp</strong>
+                                        <p><a href="https://wa.me/5511999999999" >(11) 99999-9999</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="info-card">
+                            <h3>Horários de Atendimento</h3>
+                            <div class="business-hours">
+                                <div class="hours-item">
+                                    <span class="day">Segunda a Sexta</span>
+                                    <span class="time">8h às 18h</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Sábado</span>
+                                    <span class="time">8h às 14h</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Domingo</span>
+                                    <span class="time">Fechado</span>
+                                </div>
+                                <div class="hours-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>Atendimentos online disponíveis em horários flexíveis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Emergency Contact -->
+                        <div class="info-card emergency-card">
+                            <h3>Atendimento de Emergência</h3>
+                            <p>Para casos urgentes fora do horário comercial:</p>
+                            <a href="https://wa.me/5511999999999?text=EMERGÊNCIA:"  class="btn btn-emergency">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                WhatsApp Emergência
+                            </a>
+                            <small>*Taxa adicional para atendimentos emergenciais</small>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="info-card">
+                            <h3>Redes Sociais</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link instagram" >
+                                    <i class="fab fa-instagram"></i>
+                                    <span>@naturavet</span>
+                                </a>
+                                <a href="#" class="social-link facebook" >
+                                    <i class="fab fa-facebook"></i>
+                                    <span>NaturaVet</span>
+                                </a>
+                                <a href="#" class="social-link youtube" >
+                                    <i class="fab fa-youtube"></i>
+                                    <span>NaturaVet</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Localização</h2>
+                    <p class="section-subtitle">
+                        Estamos localizados na Vila Madalena, região de fácil acesso em São Paulo
+                    </p>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6918!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwNDEnMzAuNSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="map-info">
+                        <div class="location-details">
+                            <h3>Como Chegar</h3>
+                            <div class="transport-options">
+                                <div class="transport-item">
+                                    <i class="fas fa-subway"></i>
+                                    <div>
+                                        <strong>Metrô</strong>
+                                        <p>Estação Vila Madalena (Linha 2-Verde) - 5 min a pé</p>
+                                    </div>
+                                </div>
+                                <div class="transport-item">
+                                    <i class="fas fa-bus"></i>
+                                    <div>
+                                        <strong>Ônibus</strong>
+                                        <p>Linhas 107M, 178P, 209P - Ponto na Rua Harmonia</p>
+                                    </div>
+                                </div>
+                                <div class="transport-item">
+                                    <i class="fas fa-car"></i>
+                                    <div>
+                                        <strong>Carro</strong>
+                                        <p>Estacionamento próprio disponível</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <p class="section-subtitle">
+                        Tire suas principais dúvidas sobre nossos serviços e atendimento
+                    </p>
+                </div>
+
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Como funciona o agendamento de consultas?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Após preencher o formulário, nossa equipe entrará em contato em até 2 horas para confirmar a disponibilidade e agendar sua consulta no melhor horário para você.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quais documentos devo levar na primeira consulta?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Traga a carteira de vacinação do pet, exames recentes (se houver), receitas de medicamentos em uso e informações sobre a alimentação atual. Se possível, leve uma amostra da ração que seu pet consome.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>As consultas online têm a mesma qualidade das presenciais?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! As consultas online são completas e eficazes. Utilizamos tecnologia de videoconferência de alta qualidade e você receberá o mesmo nível de atenção e cuidado especializado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quanto tempo dura uma consulta nutricional?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A primeira consulta tem duração de 60 a 90 minutos, tempo necessário para uma avaliação completa. As consultas de retorno duram entre 30 a 45 minutos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Vocês atendem em domicílio?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim, oferecemos atendimento domiciliar na região de São Paulo. Este serviço tem taxa adicional e está sujeito à disponibilidade de agenda.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Qual é a política de cancelamento?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Cancelamentos podem ser feitos até 24 horas antes da consulta sem cobrança. Cancelamentos com menos de 24 horas ou faltas sem aviso prévio estão sujeitos à cobrança de taxa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo/logo-principal.png" alt="NaturaVet Logo" class="footer-logo">
+                        <h3 class="footer-brand-name">NaturaVet</h3>
+                    </div>
+                    <p class="footer-description">
+                        Cuidando da nutrição e bem-estar dos seus pets com amor, 
+                        dedicação e conhecimento especializado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" >
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicos.html">Consulta Nutricional</a></li>
+                        <li><a href="servicos.html">Plano Alimentar</a></li>
+                        <li><a href="servicos.html">Acompanhamento</a></li>
+                        <li><a href="servicos.html">Orientação Online</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@naturavet.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NaturaVet. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Solicitação Enviada com Sucesso!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Obrigado pelo seu interesse! Recebemos sua solicitação e entraremos em contato em até 2 horas para confirmar o agendamento.</p>
+                <p><strong>Próximos passos:</strong></p>
+                <ul>
+                    <li>Verificaremos a disponibilidade na data solicitada</li>
+                    <li>Entraremos em contato via WhatsApp ou telefone</li>
+                    <li>Enviaremos as orientações para a consulta</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="closeModal()">Entendi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components/navigation.js"></script>
+    <script src="assets/js/pages/contato.js"></script>
+</body>
+</html>
